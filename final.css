@@ -1,0 +1,104 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo para el formulario */
+.calcular {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* Para que los resultados se posicionen dentro */
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de los campos del formulario */
+.input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Botón de envío */
+.submit-btn {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Resultados */
+.resultados {
+    position: absolute;
+    top: 20px;  /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.resultados h2 {
+    margin-bottom: 10px;
+}
+
+.resultados p {
+    margin: 5px 0;
+}
+
+/* Mensajes de error */
+p {
+    color: #d9534f;
+    font-size: 18px;
+}
+
+/* Efectos de transición */
+.submit-btn, .input-field {
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover, .input-field:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
